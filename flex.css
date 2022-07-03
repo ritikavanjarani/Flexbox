@@ -1,0 +1,15 @@
+.box{
+    background-color: goldenrod;
+    width: 100px;
+    height: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    /* flex direction doesnt just shift it changes the direction like if we write row-reverse that will not just shift it will start from right and then go on in left similarly for column reverse it will start from bottom*/
+    height: 800px;
+    background-color: chartreuse;
+    justify-content: center;
+    align-items: center;
+
+}

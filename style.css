@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: darksalmon;
+}
+.navbar ul li{
+    display: inline-block;
+   margin-left: 10px;
+   margin-right: 10px;
+    font-size: 20px;
+    font-weight: bolder
+    
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    height: 100px;
+
+  
+}
+.navbar{
+    margin: 50px 0 0 ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+.tile{
+    margin-left:100px;
+    margin-right: 100px;
+    /* background-color: coral; */
+}
+.left, .right{
+    display: inline-block;
+    vertical-align: top;
+}
+.left{
+    width: 50%;
+    padding:20px;
+    
+    
+}
+.right{
+    width: calc(50% - 40px);
+    
+    
+}
+.right img{
+    width: 100%;
+    position: relative;
+    bottom: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#editor{
+    text-transform: capitalize;
+    margin: 10px 50px; 
+    font-size: 30px;
+}
