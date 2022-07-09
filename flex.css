@@ -1,15 +1,55 @@
 .box{
     background-color: goldenrod;
-    width: 100px;
-    height: 100px;
+     width: 150px; 
+     height: 100px;  
+    border: 2px solid cyan;
 }
 .container{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     /* flex direction doesnt just shift it changes the direction like if we write row-reverse that will not just shift it will start from right and then go on in left similarly for column reverse it will start from bottom*/
-    height: 800px;
+    height: 800px; 
     background-color: chartreuse;
-    justify-content: center;
-    align-items: center;
+    width: 550px;
+    flex-basis: 150px;
+    /* flex-wrap: wrap; */
 
+    /* justify is applied on main axis */
+    /* justify-content: center; */
+
+    /* align is applied to perpendicular axis */
+    align-items: stretch; 
+
+    /* shorthand flex flow contains flex direction and flexwrap */
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    /* align content se space wrap kar sakte hai if we have given padding and margins wo bhi ignore karega */
+    align-content: flex-start;
+
+}
+#one{
+    /* margin-top: 30px; */
+    /* padding-top: 20px;  */
+    /* order: -1; */
+}
+#two{
+    /* order mai -1 daala to pehle aata hai 1 daala to last mai aata hai */
+    /* order: -1; */
+/* flex grow ka initial value is 0 if sirf two ko 1 diya to that will take up the remaining space if three ko bhi 1 diya to remaining part equal size mai 2 & 3 lenge if three ko 2 diya to three jyada lega two se */
+    /* flex-grow: 1; */
+/* flex shrink ka default is 1 */
+    flex-shrink: 2;
+    /* align-self: center; */
+     
+
+    /* This is a flex shorthand pehle grow fhir shrink fhir flexbasis */
+    /* flex: 0 1 200px; */
+}
+#three{
+    /* flex-grow: 2; */
+}
+body{
+    margin: 0;
+    padding: 0;
 }
